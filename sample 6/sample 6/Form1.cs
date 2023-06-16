@@ -44,7 +44,7 @@ namespace sample_6
             textBox1.Clear();
         }
 
-        private void button14_Click(object sender, EventArgs e)
+        private void button10_Click(object sender, EventArgs e)
         {
             try
             {
@@ -101,10 +101,6 @@ namespace sample_6
             textBox1.Text = textBox1.Text + button8.Text;
         }
 
-        private void button10_Click(object sender, EventArgs e)
-        {
-            textBox1.Text = textBox1.Text + button0.Text;
-        }
 
         private void button11_Click(object sender, EventArgs e)
         {
@@ -116,5 +112,12 @@ namespace sample_6
             textBox1.Clear();
             total1 = 0;
         }
+
+        private void button10_Click_1(object sender, EventArgs e)
+        {
+           
+        }
+
+       
     }
 }
