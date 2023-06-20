@@ -106,12 +106,18 @@ namespace sample_11
         {
             SqlCommand cmd1 = new SqlCommand("select id,firstname As firstname,lastname As lastname,sum from details where firstname Like @firstname+'%'", conn);
             cmd1.Parameters.AddWithValue("firstname", textBox5.Text);
+           
             SqlDataAdapter da = new SqlDataAdapter();
             da.SelectCommand = cmd1;
             DataTable dt = new DataTable();
             dt.Clear();
             da.Fill(dt);
             dataGridView1.DataSource = dt;
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

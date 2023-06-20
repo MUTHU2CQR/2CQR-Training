@@ -87,9 +87,9 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(72, 260);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(45, 20);
+            this.label5.Size = new System.Drawing.Size(66, 20);
             this.label5.TabIndex = 4;
-            this.label5.Text = "SUM";
+            this.label5.Text = "MARKS";
             // 
             // textBox1
             // 
@@ -97,6 +97,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(169, 26);
             this.textBox1.TabIndex = 6;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
@@ -151,7 +152,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(97, 40);
             this.button2.TabIndex = 12;
-            this.button2.Text = "NEW";
+            this.button2.Text = "CLEAR";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
