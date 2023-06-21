@@ -22,10 +22,10 @@ namespace collections
             List < string > students = new List<string>();
             students.Add("BOYSSSS");
             students.Add("-----------------------------------");
-            students.Add("1---muthu");
-            students.Add("2---sanjay");
-            students.Add("3---vicky");
-            students.Add("4---abdul");
+            students.Add("---muthu");
+            students.Add("---sanjay");
+            students.Add("---vicky");
+            students.Add("---abdul");
 
             for (int i = 0; i < students.Count; i++)
             {
@@ -33,6 +33,22 @@ namespace collections
                 listBox1.Items.Add(students[i]);
 
             }
+            students.Add("vishali");
+            listBox1.Items.Add("Add new person---" + students[6]);
+
+           students.Sort();
+            listBox1.Items.Add("=============================");
+            for(int i = 0; i < students.Count; i++)
+            {
+                listBox1.Items.Add("after sorting---" + students[i]);
+            }
+            students.Remove("vishali");
+            listBox1.Items.Add(students[6]);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }
