@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace sample13
+namespace mouse_click
 {
     public partial class Form1 : Form
     {
@@ -17,21 +17,15 @@ namespace sample13
             InitializeComponent();
         }
 
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            string WebPage = textaddress.Text.Trim();
-
-            webBrowser1.Navigate(WebPage);
+            MessageBox.Show(sender.ToString());
+            MessageBox.Show(e.ToString());
         }
 
-        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        private void form_mouseclick(object sender, EventArgs e)
         {
-
+           
         }
     }
 }
